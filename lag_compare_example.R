@@ -42,4 +42,4 @@ hist(res.mat[,2])
 
 mdl2<- t.test(res.mat[,1],mu = 0)
 mdl2
-ggplot(res.df,aes(res.mat[,1]))+geom_histogram(binwidth = 0.1)
+ggplot(res.df,aes(res.mat[,1]))+geom_histogram(binwidth = 0.1) 
