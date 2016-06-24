@@ -11,7 +11,7 @@ max_ccf<- function(a,b)
   cor = d$acf[,,1]
   lag = d$lag[,,1]
   res = data.frame(cor,lag)
-  res_max = res[which.max(res$cor),]
+  res_max = res[which.max(abs(res$cor)),]
   return(res_max)
 }
 # apply to data
